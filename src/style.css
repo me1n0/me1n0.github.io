@@ -8,68 +8,52 @@ body {
   font-family: "Fragment Mono", monospace;
   display: flex;
   flex-direction: column;
-  background: #f2eee9f4;
-  background-image: url(images/grain.svg);
-  color: #1c1d19;
+  background: #ffffff;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
-  border: 1.5px solid #1c1d19;
   justify-content: center;
   align-self: center;
   align-items: center;
   text-align: center;
-  width: 450px;
-  padding: 40px;
-  margin: 20px 0;
-  box-shadow: #1c1d193e 7px 7px;
 }
 
-h1 a {
+h1 {
+  margin: 0 0 10px;
   color: #1c1d19;
   text-decoration: none;
+  font-size: 60px;
 }
 
-h2 {
-  margin: 50px 0 10px;
+img {
+  height: 250px;
+  margin: 10px 0;
 }
 
 ul {
   text-align: center;
   padding: 0;
+  display: flex;
+  margin: 10px 0 30px;
 }
 
 li {
   list-style: none;
-  margin: 12px 0;
+  flex: 1;
 }
 
 li a {
   color: #1c1d19;
   text-decoration: none;
-  position: relative;
-}
-
-li a:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 0;
-  height: 1.5px;
-  background: #1c1d19;
-  transition: all 0.3s;
-}
-
-li a:hover:after {
-  width: 100%;
-  left: 0;
+  font-size: 13px;
+  margin: 10px;
 }
 
 @media only screen and (max-width: 500px) {
   .container {
-    border: none;
-    width: 400px;
-    box-shadow: none;
   }
 }
